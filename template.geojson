@@ -1,0 +1,23 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sample Colorado Region"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-105.0, 40.0],
+              [-104.0, 40.0],
+              [-104.0, 39.5],
+              [-105.0, 39.5],
+              [-105.0, 40.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }

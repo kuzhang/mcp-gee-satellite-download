@@ -1,0 +1,5 @@
+# ignore secrets
+.env
+gee-key.json
+server.log
+download/
