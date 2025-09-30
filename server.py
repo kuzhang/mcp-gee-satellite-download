@@ -368,7 +368,9 @@ def get_llm_prompt(query: str) -> str:
 	  1. **(Preferred)** Pass the coordinates as a simple list to the `bounding_box` parameter.
 	  2. Convert it into a valid GeoJSON string and pass it to the `region_geojson` parameter.
 	- Use the `bounding_box` parameter for simple rectangular areas. Use `region_geojson` for more complex shapes like polygons.
-	- Remember that coordinates are in [longitude, latitude] order.
+	- Coordinates MUST be in [longitude, latitude] order. Do NOT swap to [latitude, longitude].
+	- For bounding boxes, preserve the exact order [min_lon, min_lat, max_lon, max_lat].
+	- For GeoJSON, every coordinate pair must be [lon, lat].
 	- Provide only one of: coordinates, a bounding box, or GeoJSON.
 
 	Extract all other parameters like dates, cloud cover, and image count from the query.

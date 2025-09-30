@@ -84,10 +84,10 @@ async def main(prompt: str) -> None:
 if __name__ == "__main__":
     response = asyncio.run(main("""
     Please download the satellite image for a bounding box defined by the coordinates 
-    [52.569075, 24.061651, 54.3498150, 24.420658]. The desired date range is 2020-01-01 to 2021-01-31.
+    [52.526831501, 24.130796795, 52.578119029, 24.181873633]. The desired date range is 2020-01-01 to 2021-01-31.
     The scale is 10 meters. Split the region into smaller tiles if necessary.
-    Select the bands B4, B3, B2, B8.
-    Filter for less than 20% cloud cover and download 1 image."""))
+    Select the bands B4, B3, B2, B8, B11.
+    Filter for less than 20% cloud cover and download 3 image."""))
     print("\n--------------------------------")
     print("\nAgent response :", response)
     print("\n--------------------------------")
